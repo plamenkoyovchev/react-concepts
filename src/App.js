@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Counter from "./patterns/set-state/Counter";
-import ClickCounter from "./patterns/hoc/ClickCounter";
-import HoverCounter from "./patterns/hoc/HoverCounter";
+import Counter from "./patterns-and-concepts/set-state/Counter";
+import ClickCounter from "./patterns-and-concepts/hoc/ClickCounter";
+import HoverCounter from "./patterns-and-concepts/hoc/HoverCounter";
 
 const App = () => {
   return (
