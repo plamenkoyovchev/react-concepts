@@ -16,9 +16,11 @@ class Counter extends Component {
   };
 
   render() {
+    const { count } = this.state;
+
     return (
       <>
-        <label>{`Counter: ${this.state.count}`}</label>
+        <label>{`Counter: ${count}`}</label>
         <button onClick={this.onIncrementHandler}>Increment</button>
       </>
     );
