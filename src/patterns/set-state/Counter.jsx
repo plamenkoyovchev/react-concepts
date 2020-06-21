@@ -10,11 +10,9 @@ class Counter extends Component {
   }
 
   onIncrementHandler = () => {
-    this.setState((prevState) => {
-      return {
-        count: prevState.count + 1,
-      };
-    });
+    this.setState((prevState, props) => ({
+      count: prevState.count + 1,
+    }));
   };
 
   render() {
