@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Counter from "./patterns/set-state/Counter";
 import ClickCounter from "./patterns/hoc/ClickCounter";
+import HoverCounter from "./patterns/hoc/HoverCounter";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div>
         <h4>Shared functionality with withCounter HOC component</h4>
         <ClickCounter name="Plamen" />
+        <HoverCounter />
       </div>
     </div>
   );
