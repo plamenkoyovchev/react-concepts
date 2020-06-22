@@ -5,10 +5,12 @@ import ClickCounter from "./patterns-and-concepts/hoc/ClickCounter";
 import HoverCounter from "./patterns-and-concepts/hoc/HoverCounter";
 import User from "./patterns-and-concepts/render-props/User";
 import CounterWithRenderProps from "./patterns-and-concepts/render-props/CounterWithRenderProps";
+import HookCounter from "./hooks/state/HookCounter";
 
 const App = () => {
   return (
     <div className="App">
+      <h3>Class implementation</h3>
       <div>
         <h4>Normal counter implementation</h4>
         <Counter />
@@ -29,6 +31,12 @@ const App = () => {
             <Counter count={count} increment={increment} />
           )}
         />
+      </div>
+      <hr />
+      <h3>Hooks implementation</h3>
+      <div>
+        <h4>Counter</h4>
+        <HookCounter />
       </div>
     </div>
   );
