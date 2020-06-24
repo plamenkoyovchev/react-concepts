@@ -7,6 +7,7 @@ import User from "./patterns-and-concepts/render-props/User";
 import CounterWithRenderProps from "./patterns-and-concepts/render-props/CounterWithRenderProps";
 import HookCounter from "./hooks/state/HookCounter";
 import TextInput from "./patterns-and-concepts/refs/TextInput";
+import Form from "./patterns-and-concepts/forms/Form";
 
 const App = () => {
   return (
@@ -36,6 +37,10 @@ const App = () => {
       <div>
         <h4>Refs, focus on input element</h4>
         <TextInput />
+      </div>
+      <div>
+        <h4>Form handling</h4>
+        <Form />
       </div>
       <hr />
       <h3>Hooks implementation</h3>
