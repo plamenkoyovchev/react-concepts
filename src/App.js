@@ -44,8 +44,10 @@ const App = () => {
         <Form />
       </div>
       <div>
-        <h4>Mounting lifecycles</h4>
+        <h4>Mounting lifecycles - mounting phase</h4>
         <LifecycleA />
+      </div><div>
+        <h4>Updating lifecycles - updating phase</h4>
       </div>
       <hr />
       <h3>Hooks implementation</h3>
