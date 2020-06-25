@@ -1,0 +1,21 @@
+1. constructor(props)
+
+    - give initial state value and initialize event handlers
+
+2. static getDerivedStateFromProps(props, state)
+
+    - use when the state of the component depends on the changes in props over time
+    - return object { } which will be the new state of the component
+
+3. render()
+
+    - required method
+    - Read props & state and return JSX
+    - children component lifecycle methods are executed at this stage
+
+4. componentDidMount()
+
+    - Invoked immediately after a component has been rendered and all 
+      its children components have been rendered to the componentDidMount
+    - place to interact with the DOM, http requests to load data
+
