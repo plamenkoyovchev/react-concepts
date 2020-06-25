@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import LifecycleB from "./LifecycleB";
 
 class LifecycleA extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       name: "Plamen",
     };
@@ -22,7 +22,12 @@ class LifecycleA extends Component {
 
   render() {
     console.log("Lifecycle A render");
-    return <div>Lifecycle A</div>;
+    return (
+      <>
+        <div>Lifecycle A</div>
+        <LifecycleB />
+      </>
+    );
   }
 }
 

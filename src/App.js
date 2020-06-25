@@ -8,6 +8,7 @@ import CounterWithRenderProps from "./patterns-and-concepts/render-props/Counter
 import HookCounter from "./hooks/state/HookCounter";
 import TextInput from "./patterns-and-concepts/refs/TextInput";
 import Form from "./patterns-and-concepts/forms/Form";
+import LifecycleA from "./patterns-and-concepts/lifecycle-methods/mounting/LifecycleA";
 
 const App = () => {
   return (
@@ -41,6 +42,10 @@ const App = () => {
       <div>
         <h4>Form handling</h4>
         <Form />
+      </div>
+      <div>
+        <h4>Mounting lifecycles</h4>
+        <LifecycleA />
       </div>
       <hr />
       <h3>Hooks implementation</h3>
