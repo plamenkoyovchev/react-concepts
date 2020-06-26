@@ -38,6 +38,20 @@ class LifecycleA extends Component {
     this.setState({ name: "Plamenko" });
   };
 
+  componentWillUnmount() {
+    // Method is invoked immmediately before a component is unmounted and destroyed
+    // Here is the place to cancel http requests, remove event handlers, cancel subscriptions,
+    // invalidating timers
+  }
+
+  static getDerivedStateFromError(error) {
+    // called when there is error
+  }
+
+  componentDidCatch(error, info) {
+    // called when there is error
+  }
+
   render() {
     console.log("Lifecycle A render");
     return (
