@@ -1,0 +1,32 @@
+
+        Updating lifecycle methods ( phase )
+
+
+1. static getDerivedStateFromProps(props, state)
+    
+    - called every time a component is re-rendered
+    - can set the state
+
+2. shouldComponentUpdate(nextProps, nextState)
+
+    - return boolean which will dictate if the component should be re-endered or not
+    - for performance optimization
+    - rarely used
+
+3. render 
+
+    - read props & state and return JSX
+
+4. getSnapshotBeforeUpdate(prevProps, prevState)
+
+    - called right before the changes from the virtual DOM are 
+        to be reflected in the real DOM
+    - return null or value which will be passed as the third parameter to the next
+        lifecycle method
+    - rarely used
+
+5. componentDidUpdate(prevProps, prevState, snapshot)
+
+    - called after the render is finished in the re-render cycles
+    - guaranteed called only once within one render cycle
+    - we can create http requests here
