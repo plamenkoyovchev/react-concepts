@@ -9,6 +9,7 @@ import HookCounter from "./hooks/state/HookCounter";
 import TextInput from "./patterns-and-concepts/refs/TextInput";
 import Form from "./patterns-and-concepts/forms/Form";
 import LifecycleA from "./patterns-and-concepts/lifecycle-methods/mounting/LifecycleA";
+import ParentComponent from "./patterns-and-concepts/pure-components/ParentComponent";
 
 const App = () => {
   return (
@@ -48,6 +49,10 @@ const App = () => {
         <LifecycleA />
       </div><div>
         <h4>Updating lifecycles - updating phase</h4>
+      </div>
+      <div>
+        <h4>Pure Components & React.memo</h4>
+        <ParentComponent />
       </div>
       <hr />
       <h3>Hooks implementation</h3>
