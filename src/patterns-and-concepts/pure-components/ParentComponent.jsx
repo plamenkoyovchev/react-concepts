@@ -1,11 +1,11 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import RegularComponent from "./RegularComponent";
 import PureComponentA from "./PureComponentA";
 
 // It is considered as a good practice all children components also to extend PureComponent
 // if the parent extends PureComponent
 
-export class ParentComponent extends PureComponent {
+export class ParentComponent extends Component {
   constructor(props) {
     super(props);
 
