@@ -10,6 +10,8 @@ import TextInput from "./patterns-and-concepts/refs/TextInput";
 import Form from "./patterns-and-concepts/forms/Form";
 import LifecycleA from "./patterns-and-concepts/lifecycle-methods/mounting/LifecycleA";
 import ParentComponent from "./patterns-and-concepts/pure-components/ParentComponent";
+import Hero from "./patterns-and-concepts/errors/Hero";
+import ErrorBoundary from "./patterns-and-concepts/errors/ErrorBoundary";
 
 const App = () => {
   return (
@@ -53,6 +55,18 @@ const App = () => {
       <div>
         <h4>Pure Components & React.memo</h4>
         <ParentComponent />
+      </div>
+      <div>
+        <h4>Error Boundary</h4>
+        <ErrorBoundary>
+          <Hero name="Spider man" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name="plamen" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name="Batman" />
+        </ErrorBoundary>
       </div>
       <hr />
       <h3>Hooks implementation</h3>
