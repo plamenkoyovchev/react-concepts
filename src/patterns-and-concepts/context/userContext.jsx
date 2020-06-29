@@ -1,6 +1,7 @@
 import React from "react";
 
-const UserContext = React.createContext();
+const defaultValue = "Anonymous";
+const UserContext = React.createContext(defaultValue);
 
 const UserProvider = UserContext.Provider;
 const UserConsumer = UserContext.Consumer;
