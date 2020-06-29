@@ -18,7 +18,7 @@ class ErrorBoundary extends Component {
     };
   }
 
-  componentDidCatch(error) {
+  componentDidCatch(error, info) {
     // log error to external service (e.g.)
   }
 
