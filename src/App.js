@@ -12,6 +12,8 @@ import LifecycleA from "./patterns-and-concepts/lifecycle-methods/mounting/Lifec
 import ParentComponent from "./patterns-and-concepts/pure-components/ParentComponent";
 import Hero from "./patterns-and-concepts/errors/Hero";
 import ErrorBoundary from "./patterns-and-concepts/errors/ErrorBoundary";
+import ComponentC from "./patterns-and-concepts/context/ComponentC";
+import { UserProvider } from "./patterns-and-concepts/context/userContext";
 
 const App = () => {
   return (
@@ -67,6 +69,12 @@ const App = () => {
         <ErrorBoundary>
           <Hero name="Batman" />
         </ErrorBoundary>
+      </div>
+      <div>
+        <h4>Context provider & consumer</h4>
+        <UserProvider value="plamenyovchev">
+          <ComponentC />
+        </UserProvider>
       </div>
       <hr />
       <h3>Hooks implementation</h3>
