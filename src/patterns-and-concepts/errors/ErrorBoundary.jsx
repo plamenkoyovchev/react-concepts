@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+// we can wrap single component or
+// if we are rendering lists we can wrap each item with error boundary to keep application running other app parts
+
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
