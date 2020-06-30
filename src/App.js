@@ -15,6 +15,7 @@ import ErrorBoundary from "./patterns-and-concepts/errors/ErrorBoundary";
 import ComponentC from "./patterns-and-concepts/context/ComponentC";
 import { UserProvider } from "./patterns-and-concepts/context/userContext";
 import Phonebook from "./hooks/state/Phonebook";
+import NumbersList from "./hooks/state/NumbersList";
 
 const App = () => {
   return (
@@ -86,6 +87,10 @@ const App = () => {
       <div>
         <h4>useState with object</h4>
         <Phonebook />
+      </div>
+      <div>
+        <h4>useState with array</h4>
+        <NumbersList />
       </div>
     </div>
   );
