@@ -16,6 +16,7 @@ import ComponentC from "./patterns-and-concepts/context/ComponentC";
 import { UserProvider } from "./patterns-and-concepts/context/userContext";
 import Phonebook from "./hooks/state/Phonebook";
 import NumbersList from "./hooks/state/NumbersList";
+import ClassCounter from "./hooks/effect/ClassCounter";
 
 const App = () => {
   return (
@@ -24,6 +25,10 @@ const App = () => {
       <div>
         <h4>Normal counter implementation</h4>
         <Counter />
+      </div>
+      <div>
+        <h4>Class counter implementation</h4>
+        <ClassCounter />
       </div>
       <div>
         <h4>Shared functionality with withCounter HOC component</h4>
