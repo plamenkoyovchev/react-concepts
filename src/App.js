@@ -18,6 +18,7 @@ import Phonebook from "./hooks/state/Phonebook";
 import NumbersList from "./hooks/state/NumbersList";
 import ClassCounter from "./hooks/effect/ClassCounter";
 import HooksCounter from "./hooks/effect/HooksCounter";
+import ClassMouse from "./hooks/effect/ClassMouse";
 
 const App = () => {
   return (
@@ -83,6 +84,10 @@ const App = () => {
         <UserProvider value="plamenyovchev">
           <ComponentC />
         </UserProvider>
+      </div>
+      <div>
+        <h4>Register event handlers in Class Components</h4>
+        <ClassMouse />
       </div>
       <hr />
       <h3>Hooks implementation</h3>
