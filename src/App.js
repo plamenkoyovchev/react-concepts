@@ -19,6 +19,7 @@ import NumbersList from "./hooks/state/NumbersList";
 import ClassCounter from "./hooks/effect/ClassCounter";
 import HooksCounter from "./hooks/effect/HooksCounter";
 import ClassMouse from "./hooks/effect/ClassMouse";
+import HooksMouse from "./hooks/effect/HooksMouse";
 
 const App = () => {
   return (
@@ -106,6 +107,10 @@ const App = () => {
       <div>
         <h4>useEffect</h4>
         <HooksCounter />
+      </div>
+      <div>
+        <h4>useEffect - to register event handlers + cleanup</h4>
+        <HooksMouse />
       </div>
     </div>
   );
