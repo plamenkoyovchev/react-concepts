@@ -17,6 +17,7 @@ import { UserProvider } from "./patterns-and-concepts/context/userContext";
 import Phonebook from "./hooks/state/Phonebook";
 import NumbersList from "./hooks/state/NumbersList";
 import ClassCounter from "./hooks/effect/ClassCounter";
+import HooksCounter from "./hooks/effect/HooksCounter";
 
 const App = () => {
   return (
@@ -88,6 +89,7 @@ const App = () => {
       <div>
         <h4>Counter</h4>
         <HookCounter />
+        <HooksCounter />
       </div>
       <div>
         <h4>useState with object</h4>
