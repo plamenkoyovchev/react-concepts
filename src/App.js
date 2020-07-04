@@ -89,7 +89,6 @@ const App = () => {
       <div>
         <h4>Counter</h4>
         <HookCounter />
-        <HooksCounter />
       </div>
       <div>
         <h4>useState with object</h4>
@@ -98,6 +97,10 @@ const App = () => {
       <div>
         <h4>useState with array</h4>
         <NumbersList />
+      </div>
+      <div>
+        <h4>useEffect</h4>
+        <HooksCounter />
       </div>
     </div>
   );
