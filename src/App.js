@@ -13,13 +13,14 @@ import ParentComponent from "./patterns-and-concepts/pure-components/ParentCompo
 import Hero from "./patterns-and-concepts/errors/Hero";
 import ErrorBoundary from "./patterns-and-concepts/errors/ErrorBoundary";
 import ComponentC from "./patterns-and-concepts/context/ComponentC";
-import { UserProvider } from "./patterns-and-concepts/context/userContext";
+import { UserProvider, UserContext } from "./patterns-and-concepts/context/userContext";
 import Phonebook from "./hooks/state/Phonebook";
 import NumbersList from "./hooks/state/NumbersList";
 import ClassCounter from "./hooks/effect/ClassCounter";
 import HooksCounter from "./hooks/effect/HooksCounter";
 import ClassMouse from "./hooks/effect/ClassMouse";
 import HooksMouse from "./hooks/effect/HooksMouse";
+import ComponentZ from "./hooks/context/ComponentZ";
 
 const App = () => {
   return (
@@ -111,6 +112,12 @@ const App = () => {
       <div>
         <h4>useEffect - to register event handlers + cleanup</h4>
         <HooksMouse />
+      </div>
+      <div>
+        <h4>useContext - to consume React.createContext()</h4>
+        <UserContext.Provider value={'plamenkooo'}>
+          <ComponentZ />
+        </UserContext.Provider>
       </div>
     </div>
   );
