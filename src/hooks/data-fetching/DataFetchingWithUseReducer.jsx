@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import axios from "axios";
-import { useReducer } from "react";
-import { useEffect } from "react";
 
 const initialState = {
   post: {},
