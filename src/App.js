@@ -13,7 +13,10 @@ import ParentComponent from "./patterns-and-concepts/pure-components/ParentCompo
 import Hero from "./patterns-and-concepts/errors/Hero";
 import ErrorBoundary from "./patterns-and-concepts/errors/ErrorBoundary";
 import ComponentC from "./patterns-and-concepts/context/ComponentC";
-import { UserProvider, UserContext } from "./patterns-and-concepts/context/userContext";
+import {
+  UserProvider,
+  UserContext,
+} from "./patterns-and-concepts/context/userContext";
 import Phonebook from "./hooks/state/Phonebook";
 import NumbersList from "./hooks/state/NumbersList";
 import ClassCounter from "./hooks/effect/ClassCounter";
@@ -21,6 +24,7 @@ import HooksCounter from "./hooks/effect/HooksCounter";
 import ClassMouse from "./hooks/effect/ClassMouse";
 import HooksMouse from "./hooks/effect/HooksMouse";
 import ComponentZ from "./hooks/context/ComponentZ";
+import DataFetchingWithUseState from "./hooks/data-fetching/DataFetchingWithUseState";
 
 const App = () => {
   return (
@@ -62,7 +66,8 @@ const App = () => {
       <div>
         <h4>Mounting lifecycles - mounting phase</h4>
         <LifecycleA />
-      </div><div>
+      </div>
+      <div>
         <h4>Updating lifecycles - updating phase</h4>
       </div>
       <div>
@@ -115,9 +120,13 @@ const App = () => {
       </div>
       <div>
         <h4>useContext - to consume React.createContext()</h4>
-        <UserContext.Provider value={'plamenkooo'}>
+        <UserContext.Provider value={"plamenkooo"}>
           <ComponentZ />
         </UserContext.Provider>
+      </div>
+      <div>
+        <h4>Data fetching - with useState</h4>
+        <DataFetchingWithUseState />
       </div>
     </div>
   );

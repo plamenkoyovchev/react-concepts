@@ -16,9 +16,9 @@ export class ParentComponent extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
-      this.setState({ name: "Plamenkooo" });
-    }, 2000);
+    //setInterval(() => {
+    this.setState({ name: "Plamenkooo" });
+    //}, 2000);
   }
 
   render() {
