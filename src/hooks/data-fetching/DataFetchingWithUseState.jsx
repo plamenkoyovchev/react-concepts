@@ -6,18 +6,22 @@ import { useEffect } from "react";
 const DataFetchingWithUseState = () => {
   const [post, setPost] = useState({});
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts/1"
-      );
-      setLoading(false);
-      return response;
-    };
-    const response = fetchData();
-    setPost(response.data);
+    setLoading(true);
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts/1")
+      .then((response) => {
+        setPost(response.data);
+        setError("");
+      })
+      .catch((error) => {
+        setError(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   if (loading) {
@@ -26,6 +30,7 @@ const DataFetchingWithUseState = () => {
 
   return (
     <>
+      {error && <div>error</div>}
       <div>{post.title}</div>
     </>
   );
