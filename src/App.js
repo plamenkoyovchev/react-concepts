@@ -25,6 +25,7 @@ import ClassMouse from "./hooks/effect/ClassMouse";
 import HooksMouse from "./hooks/effect/HooksMouse";
 import ComponentZ from "./hooks/context/ComponentZ";
 import DataFetchingWithUseState from "./hooks/data-fetching/DataFetchingWithUseState";
+import DataFetchingWithUseReducer from "./hooks/data-fetching/DataFetchingWithUseReducer";
 
 const App = () => {
   return (
@@ -127,6 +128,10 @@ const App = () => {
       <div>
         <h4>Data fetching - with useState</h4>
         <DataFetchingWithUseState />
+      </div>
+      <div>
+        <h4>Data fetching - with useReducer</h4>
+        <DataFetchingWithUseReducer />
       </div>
     </div>
   );
