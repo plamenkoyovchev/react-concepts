@@ -5,4 +5,4 @@ const Button = ({ clickHandler, children }) => {
   return <button onClick={clickHandler}>{children}</button>;
 };
 
-export default Button;
+export default React.memo(Button);
