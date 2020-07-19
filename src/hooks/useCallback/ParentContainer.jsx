@@ -18,7 +18,7 @@ const ParentContainer = () => {
   console.log("Rendering ParentContainer");
   return (
     <>
-      <Title />
+      <Title title={"without useCallback"} />
       <Count text={"Age"} count={age} />
       <Button clickHandler={incrementAge}>Increment Age</Button>
       <Count text={"Salary"} count={salary} />
