@@ -26,6 +26,7 @@ import HooksMouse from "./hooks/effect/HooksMouse";
 import ComponentZ from "./hooks/context/ComponentZ";
 import DataFetchingWithUseState from "./hooks/data-fetching/DataFetchingWithUseState";
 import DataFetchingWithUseReducer from "./hooks/data-fetching/DataFetchingWithUseReducer";
+import ParentContainer from "./hooks/useCallback/ParentContainer";
 
 const App = () => {
   return (
@@ -132,6 +133,10 @@ const App = () => {
       <div>
         <h4>Data fetching - with useReducer</h4>
         <DataFetchingWithUseReducer />
+      </div>
+      <div>
+        <h4>Rendering without using useCallback</h4>
+        <ParentContainer />
       </div>
     </div>
   );
