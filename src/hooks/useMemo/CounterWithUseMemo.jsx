@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMemo } from "react";
 
 const CounterWithUseMemo = () => {
   const [counterOne, setCounterOne] = useState(0);
@@ -12,19 +13,19 @@ const CounterWithUseMemo = () => {
     setCounterTwo((prevCounter) => prevCounter + 1);
   };
 
-  const isEven = () => {
+  const isEven = useMemo(() => {
     let i = 0;
     while (i < 2000000000) {
       i++;
     }
 
     return counterOne % 2 === 0;
-  };
+  }, [counterOne]);
 
   return (
     <>
       <div>
-        {counterOne} - {isEven() ? "Even" : "Odd"}
+        {counterOne} - {isEven ? "Even" : "Odd"}
       </div>
       <button onClick={incrementCounterOne}>Increment Counter One</button>
       <div>{counterTwo}</div>
