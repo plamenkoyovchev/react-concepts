@@ -1,0 +1,2 @@
+useCallback - to cache a function
+useMemo - to cache a result of a function
