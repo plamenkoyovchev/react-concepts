@@ -28,6 +28,7 @@ import DataFetchingWithUseState from "./hooks/data-fetching/DataFetchingWithUseS
 import DataFetchingWithUseReducer from "./hooks/data-fetching/DataFetchingWithUseReducer";
 import ParentContainer from "./hooks/useCallback/ParentContainer";
 import ParentContainerWithUseCallback from "./hooks/useCallback/ParentContainerWithUseCallback";
+import CounterWithUseMemo from "./hooks/useMemo/CounterWithUseMemo";
 
 const App = () => {
   return (
@@ -142,6 +143,10 @@ const App = () => {
       <div>
         <h4>Rendering with useCallback</h4>
         <ParentContainerWithUseCallback />
+      </div>
+      <div>
+        <h4>useMemo</h4>
+        <CounterWithUseMemo />
       </div>
     </div>
   );
