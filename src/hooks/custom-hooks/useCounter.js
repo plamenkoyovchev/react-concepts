@@ -11,7 +11,11 @@ const useCounter = (initialValue = 0) => {
     setCount((prevCount) => prevCount - 1);
   };
 
-  return [count, increment, decrement];
+  const reset = () => {
+    setCount(initialValue);
+  };
+
+  return [count, increment, decrement, reset];
 };
 
 export default useCounter;
