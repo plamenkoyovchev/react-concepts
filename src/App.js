@@ -29,6 +29,7 @@ import DataFetchingWithUseReducer from "./hooks/data-fetching/DataFetchingWithUs
 import ParentContainer from "./hooks/useCallback/ParentContainer";
 import ParentContainerWithUseCallback from "./hooks/useCallback/ParentContainerWithUseCallback";
 import CounterWithUseMemo from "./hooks/useMemo/CounterWithUseMemo";
+import CounterWithCustomHook from "./hooks/custom-hooks/CounterWithCustomHook";
 
 const App = () => {
   return (
@@ -147,6 +148,10 @@ const App = () => {
       <div>
         <h4>useMemo</h4>
         <CounterWithUseMemo />
+      </div>
+      <div>
+        <h4>Custom Hooks - useCounter</h4>
+        <CounterWithCustomHook />
       </div>
     </div>
   );
