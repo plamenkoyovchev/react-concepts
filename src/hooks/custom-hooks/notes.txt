@@ -1,0 +1,2 @@
+Custom hooks are alternative to HOC and Render props patterns 
+for sharing logic and functionalities
