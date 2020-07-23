@@ -30,6 +30,7 @@ import ParentContainer from "./hooks/useCallback/ParentContainer";
 import ParentContainerWithUseCallback from "./hooks/useCallback/ParentContainerWithUseCallback";
 import CounterWithUseMemo from "./hooks/useMemo/CounterWithUseMemo";
 import CounterWithCustomHook from "./hooks/custom-hooks/CounterWithCustomHook";
+import FocusInput from "./hooks/useRef/FocusInput.jsx";
 
 const App = () => {
   return (
@@ -148,6 +149,10 @@ const App = () => {
       <div>
         <h4>useMemo</h4>
         <CounterWithUseMemo />
+      </div>
+      <div>
+        <h4>useRef to focus on input element</h4>
+        <FocusInput />
       </div>
       <div>
         <h4>Custom Hooks - useCounter</h4>
